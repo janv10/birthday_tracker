@@ -18,17 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYR-c9-gCz">
-                                <rect key="frame" x="75" y="110" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro Page" translatesAutoresizingMaskIntoConstraints="NO" id="BYR-c9-gCz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BYR-c9-gCz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2q8-2T-0Ah"/>
+                            <constraint firstItem="BYR-c9-gCz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JB8-3N-Gg9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BYR-c9-gCz" secondAttribute="trailing" id="Qd1-DF-ylk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BYR-c9-gCz" secondAttribute="bottom" id="vtX-hb-Wgs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="104.8" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Intro Page" width="2741" height="3657"/>
+    </resources>
 </document>
