@@ -13,9 +13,12 @@
 		376A37C320D1896700FE1050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376A37C220D1896700FE1050 /* Assets.xcassets */; };
 		376A37C620D1896700FE1050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376A37C420D1896700FE1050 /* LaunchScreen.storyboard */; };
 		376A37CF20D2C96200FE1050 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376A37CE20D2C96200FE1050 /* LoginController.swift */; };
+		376A37D120D4339200FE1050 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 376A37D020D4339100FE1050 /* GoogleService-Info.plist */; };
+		A48E71850F7BB9E324A8BA7F /* Pods_birthday_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3171FE3F1713C38F00F5553F /* Pods_birthday_tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3171FE3F1713C38F00F5553F /* Pods_birthday_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_birthday_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		376A37B820D1896400FE1050 /* birthday_tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = birthday_tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		376A37BB20D1896400FE1050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		376A37BD20D1896400FE1050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		376A37C520D1896700FE1050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		376A37C720D1896700FE1050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		376A37CE20D2C96200FE1050 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		376A37D020D4339100FE1050 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5956BCFCE033EDD441DF2C13 /* Pods-birthday_tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-birthday_tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-birthday_tracker/Pods-birthday_tracker.release.xcconfig"; sourceTree = "<group>"; };
+		690EFFBD8B1AFE315239E8C1 /* Pods-birthday_tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-birthday_tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-birthday_tracker/Pods-birthday_tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48E71850F7BB9E324A8BA7F /* Pods_birthday_tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				376A37BA20D1896400FE1050 /* birthday_tracker */,
 				376A37B920D1896400FE1050 /* Products */,
+				A58DDC20F2EE5916B269A58F /* Pods */,
+				4F3ABD42B38F5DDC845D278F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +71,7 @@
 				376A37C220D1896700FE1050 /* Assets.xcassets */,
 				376A37C420D1896700FE1050 /* LaunchScreen.storyboard */,
 				376A37C720D1896700FE1050 /* Info.plist */,
+				376A37D020D4339100FE1050 /* GoogleService-Info.plist */,
 			);
 			path = birthday_tracker;
 			sourceTree = "<group>";
@@ -75,6 +85,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		4F3ABD42B38F5DDC845D278F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3171FE3F1713C38F00F5553F /* Pods_birthday_tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A58DDC20F2EE5916B269A58F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				690EFFBD8B1AFE315239E8C1 /* Pods-birthday_tracker.debug.xcconfig */,
+				5956BCFCE033EDD441DF2C13 /* Pods-birthday_tracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 376A37CA20D1896700FE1050 /* Build configuration list for PBXNativeTarget "birthday_tracker" */;
 			buildPhases = (
+				0C0795150E5CE5E8F3809A5C /* [CP] Check Pods Manifest.lock */,
 				376A37B420D1896400FE1050 /* Sources */,
 				376A37B520D1896400FE1050 /* Frameworks */,
 				376A37B620D1896400FE1050 /* Resources */,
+				C17C7547AB813460DE8F34D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +163,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				376A37C620D1896700FE1050 /* LaunchScreen.storyboard in Resources */,
+				376A37D120D4339200FE1050 /* GoogleService-Info.plist in Resources */,
 				376A37C320D1896700FE1050 /* Assets.xcassets in Resources */,
 				376A37C120D1896400FE1050 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C0795150E5CE5E8F3809A5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-birthday_tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C17C7547AB813460DE8F34D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-birthday_tracker/Pods-birthday_tracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-birthday_tracker/Pods-birthday_tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		376A37B420D1896400FE1050 /* Sources */ = {
@@ -290,6 +365,7 @@
 		};
 		376A37CB20D1896700FE1050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690EFFBD8B1AFE315239E8C1 /* Pods-birthday_tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +383,7 @@
 		};
 		376A37CC20D1896700FE1050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5956BCFCE033EDD441DF2C13 /* Pods-birthday_tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
