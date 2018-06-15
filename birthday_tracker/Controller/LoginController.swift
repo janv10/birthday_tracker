@@ -83,6 +83,17 @@ class LoginController: UIViewController {
         return view
     }()
     
+    //Add a logo
+    let profileImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "circle_logo")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        //scale the image
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
     
     //Password Field
     let passwordTextField: UITextField = {
@@ -117,14 +128,41 @@ class LoginController: UIViewController {
         //Components added to the view
         view.addSubview(inputContainerView)
         view.addSubview(registerButton)
+        view.addSubview(profileImageView)
         
         //Call function that determines x,y, width and height of the white container
         setupInputContainerView()
         
         //Set up constraints for button
         setupRegisterButtonView()
+        
+        //Set up Logo
+        setupLoginImageView()
+        
+        
     }//end viewDidLoad
     
+    
+    
+    /* Login screen logo constraints */
+    func setupLoginImageView(){
+        //Need x, y, width and height constraits to pinpoint where the image will land
+        //Set up X Value
+        profileImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        //Set up Y Value
+        profileImageView.bottomAnchor.constraint(equalTo: inputContainerView.topAnchor, constant: -12).isActive = true
+        
+        //Set up Width
+        profileImageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        
+        //Set up Height
+        profileImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+    }
+    
+    
+    
+    /* User input container constraints */
     func setupInputContainerView(){
         //Need x, y, width and height constraits to pinpoint where the box will land
         //Set X value
@@ -275,8 +313,8 @@ class LoginController: UIViewController {
     }
 }
 
-//Why type the colors the long way over and over again?
 //Create a UIColor Convenience for convenience
+//Ain't nobody got time for that
 extension UIColor{
     convenience init (r: CGFloat, g: CGFloat, b: CGFloat){
         self.init(red: r/255, green: g/255, blue: b/255, alpha: 1)
