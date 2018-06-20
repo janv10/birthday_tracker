@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class LoginController: UIViewController {
 
     //Use AutoLayout for Login name, email etc components
@@ -27,7 +26,7 @@ class LoginController: UIViewController {
     }()
 
     //Set up Register Button
-    let registerButton: UIButton = {
+    lazy var registerButton: UIButton = {
         let button = UIButton(type: .system)
         
         //Color your button
@@ -46,9 +45,15 @@ class LoginController: UIViewController {
         button.layer.cornerRadius = 5
         button.layer.masksToBounds = true;
         
+        //Add a button target
+        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    @objc func handleRegister(){
+        print (123)
+    }
     
     //Name Field
     let nameTextField: UITextField = {
